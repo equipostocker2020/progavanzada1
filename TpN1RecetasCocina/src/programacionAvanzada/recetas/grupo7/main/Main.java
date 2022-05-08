@@ -1,19 +1,15 @@
 package programacionAvanzada.recetas.grupo7.main;
 
-import programacionAvanzada.recetas.grupo7.OrganizadorRecetas;
+import programacionAvanzada.recetas.grupo7.pojo.InterfaceGrafica.Marco;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
+import javax.swing.JFrame;
+
 
 public class Main {
 
-    public static void main (String [ ] args) throws IOException {
-        OrganizadorRecetas recetas = new OrganizadorRecetas();
-//        recetas.readFile();
-//        recetas.readIngrediente();
-//        recetas.readReceta();
-        recetas.compareList(recetas.readIngrediente(), recetas.readReceta());
-
-
+    public static void main (String [ ] args)  {
+        Marco marco = new Marco();
+        marco.setVisible(true);
+        marco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 }
